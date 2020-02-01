@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,16 +17,45 @@
   <script src="index.js"></script>
   <title>Semantic Starter</title>
 </head>
+
+<h3>Kerilyn Stewart</h3>
+<!-- line 20 gives the header 3 format and displays the text inside the tags -->
+
 <body>
   <div class="ui pointing menu">
-    <a class="active item">
-      Home
+    <!-- line 23 sets the div class as a user interface pointing menu which means that the anchor tags below will be links -->
+    <a href="http://127.0.0.1:5500/" class="active item">
+      <i class="home icon"></i>
     </a>
-    <a class="item">
-      Photography
+    <!-- lines 25-27 define the anchor url, class, and text to display -->
+    <a href="./photography.html" class="item">
+      <i class="retro camera icon"></i>
     </a>
-    <a class="item">
-      Equestrian Fun
+    <!-- lines 29-31, 33-35, and 36-38 define where to go when the icon or named button is clicked  
+      You want to avoid spaces here as spaces make ugly urls the easiest way to create the pages is in command line/terminal using touch
+    line 25 shows the base site, line 29 shows the only text needed for the additional pages (don't forget to finish with .html) -->
+    <a href="./equestrianFun.html" class="item">
+      <i class="chess knight icon"></i>
+    </a>
+    <a href="./codingExamples.html" class="item">
+      <i class="code icon"></i>
+    </a>
+    <a href="https://www.facebook.com/kerilyns" target="_blank" class="item">
+      <!-- line 35 href = the url to go to, target="_blank" tells it to open the link in a new tab -->
+      <i class="facebook icon"></i>
+      <!-- line 37 sets the icon tag with the class equal to the brand of social media I want to display -->
+    </a>
+    <a href="https://github.com/kerilynstewart" target="_blank" class="item">
+      <i class="github icon"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/kerilyn-stewart-9308aa3b/" target="_blank" class="item">
+      <i class="linkedin icon"></i>
+    </a>
+    <a href="https://www.pinterest.com/kerilyns/" target="_blank" class="item">
+      <i class="pinterest icon"></i>
+    </a>
+    <a href="mailto:kerilynstewart2020@gmail.com" target="_blank" class="item">
+      <i class="mail icon"></i>
     </a>
     <div class="right menu">
       <div class="item">
@@ -36,74 +66,68 @@
       </div>
     </div>
   </div>
- 
+
 
 
   <div class="ui sixteen column grid stackable">
-   <div class="row">
-     <div class="sixteen wide column">
-       <img width="100%" height="250px" src="./assets/images/21.jpg" alt="">
-     </div>
-   </div>
+    <div class="row">
+      <div class="sixteen wide column">
+        <img width="100%" height="250px" src="./assets/images/21.jpg" alt="">
+      </div>
+    </div>
 
-   <div class="row">
-     <div class="two wide column"></div>
-    <div class="twelve wide column">
-     
+    <div class="row">
+      <div class="two wide column">
+        <!-- <button id="clickMe" class="ui inverted violet button">Violet</button> -->
+      </div>
+      <div class="twelve wide column">
+        <!-- <p id="changeMe">hey</p> -->
 
-      <div class="ui three stackable cards">
-        <div class="ui card">
-          <a class="image" href="#">
-            <img width="100%" height="100%" src="/assets/images/21.jpg">
-          </a>
-          <div class="content">
-            <a class="header" href="#">Photography</a>
-            <!-- <div class="meta">
+
+        <div class="ui three stackable cards">
+          <div class="ui card">
+            <a class="image" href="./photography.html" target="_blank">
+              <img width="100%" height="100%" src="/assets/images/21.jpg">
+            </a>
+            <div class="content">
+              <a class="header" href="./photography.html" target="_blank">Photography</a>
+              <!-- <div class="meta">
               <a>Last Seen 2 days ago</a>
             </div> -->
+            </div>
           </div>
+          <div class="ui card">
+            <a class="image" href="./equestrianFun.html" target="_blank">
+              <img width="100%" height="100%" src="/assets/images/26.jpg">
+            </a>
+            <div class="content">
+              <a class="header" href="./equestrianFun.html" target="_blank">Equestrian Fun</a>
+              <!-- <div class="meta">
+              <a>Last Seen 2 days ago</a>
+            </div> -->
+            </div>
+          </div>
+          <div class="ui card">
+            <a class="image2" href="./codingExamples.html" target="_blank">
+              <img width="220px" height="316.75px" src="/assets/images/sf tower.jpg">
+            </a>
+            <div class="content">
+              <a class="header" href="./codingExamples.html" target="_blank">Coding Examples</a>
+              <!-- <div class="meta">
+              <a>Last Seen 2 days ago</a>
+            </div> -->
+            </div>
+
+          </div>
+
         </div>
-        <div class="ui card">
-          <a class="image" href="#">
-            <img  width="100%" height="100%" src="/assets/images/26.jpg">
-          </a>
-          <div class="content">
-            <a class="header" href="#">Equestrian Fun</a>
-            <!-- <div class="meta">
-              <a>Last Seen 2 days ago</a>
-            </div> -->
-          </div>
-        </div>
-        <div class="ui fluid card">
-          <a class="image" href="#">
-            <img  width="100%" height="25px" src="/assets/images/sf tower.jpg">
-          </a>
-          <div class="content">
-            <a class="header" href="#">HTML Example</a>
-            <!-- <div class="meta">
-              <a>Last Seen 2 days ago</a>
-            </div> -->
-          </div>
-        
+        <div class="two wide column"></div>
       </div>
 
+
+
     </div>
-    <div class="two wide column"></div>
-  </div>
-
-  
-
-  </div>
-
-
-
-
-
-
-
-
-
-
 
 </body>
+
 </html>
